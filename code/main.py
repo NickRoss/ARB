@@ -88,7 +88,8 @@ def add_lat_long():
     df.to_csv('data/ARB_with_lat_long.tdf', sep='\t', index=False)
 
 if __name__ == '__main__':
-    #download_ARB()
-    #load_excel()
-    #get_location_data()
+    ### Note that this requires a plotly key to publish.
+    download_ARB()
+    load_excel()
+    get_location_data()
     add_lat_long()
