@@ -88,7 +88,8 @@ def add_lat_long():
     df.to_csv('data/ARB_with_lat_long.tdf', sep='\t', index=False)
 
 if __name__ == '__main__':
-    ### Note that this requires a plotly key to publish.
+    ### Note that this requires a google api key saved as an environment variable called GKEY to convert
+    ### addresses to lat / lon
     download_ARB()
     load_excel()
     get_location_data()
